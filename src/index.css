@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background: #0a192f;
+}
+*,
+html {
+  scroll-behavior: smooth;
+}
+.new-amsterdam-regular {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07162c;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b953d2;
+  border-radius: 7px;
+  border: 3px solid #0a192f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00c9e6;
+}
+
+.scroll-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #b953d2 #07162c;
+}

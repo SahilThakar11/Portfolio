@@ -1,0 +1,326 @@
+import { FaAws } from "react-icons/fa";
+import {
+  SiHtml5,
+  SiJavascript,
+  SiCss3,
+  SiMongodb,
+  SiReact,
+  SiAngular,
+  SiNodedotjs,
+  SiExpress,
+  SiGit,
+  SiMysql,
+  SiFigma,
+  SiCsharp,
+  SiDotnet,
+  SiVisualstudiocode,
+  SiMicrosoftazure,
+  SiTypescript,
+  SiPostgresql,
+  SiTailwindcss,
+  SiBootstrap,
+  SiDocker,
+  SiUnity,
+  SiGodotengine,
+  SiAdobephotoshop,
+  SiGithub,
+} from "react-icons/si";
+
+import NM1 from "../assets/NaxChat/NM1.png";
+import NM2 from "../assets/NaxChat/NM2.png";
+import NM3 from "../assets/NaxChat/NM3.png";
+import NT1 from "../assets/NaxChat/NT1.png";
+import ND1 from "../assets/NaxChat/ND1.png";
+
+import SS1 from "../assets/SavorSpot/SS1.png";
+import SS2 from "../assets/SavorSpot/SS2.png";
+import SS3 from "../assets/SavorSpot/SS3.png";
+import SS4 from "../assets/SavorSpot/SS4.png";
+import SS5 from "../assets/SavorSpot/SS5.png";
+
+const skills = [
+  {
+    title: "HTML",
+    section: "Frontend",
+    color: "primary",
+    icon: <SiHtml5 className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "CSS",
+    color: "primary",
+    section: "Frontend",
+    icon: <SiCss3 className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "JavaScript",
+    color: "primary",
+    section: "Language",
+    icon: <SiJavascript className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "C#",
+    color: "primary",
+    section: "Language",
+    icon: <SiCsharp className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: ".NET",
+    color: "primary",
+    section: "Backend",
+    icon: <SiDotnet className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "React",
+    color: "secondary",
+    section: "Frontend",
+    icon: <SiReact className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+  },
+  {
+    title: "Angular",
+    color: "secondary",
+    section: "Frontend",
+    icon: <SiAngular className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+  },
+  {
+    title: "Node.js",
+    color: "primary",
+    section: "Backend",
+    icon: <SiNodedotjs className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "Express",
+    color: "primary",
+    section: "Backend",
+    icon: <SiExpress className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "MongoDB",
+    color: "primary",
+    section: "Database",
+    icon: <SiMongodb className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "MySQL",
+    color: "primary",
+    section: "Database",
+    icon: <SiMysql className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "Git",
+    color: "primary",
+    section: "Tools",
+    icon: <SiGit className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "VS Code",
+    color: "primary",
+    section: "Tools",
+    icon: <SiVisualstudiocode className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "MS Azure",
+    color: "secondary",
+    section: "Tools",
+    icon: <SiMicrosoftazure className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+  },
+  {
+    title: "Figma",
+    color: "secondary",
+    section: "Design",
+    icon: <SiFigma className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+  },
+  {
+    title: "Photoshop",
+    color: "secondary",
+    section: "Design",
+    icon: <SiAdobephotoshop className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+  },
+
+  {
+    title: "TypeScript",
+    color: "primary",
+    section: "Language",
+    icon: <SiTypescript className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "PostgreSQL",
+    color: "secondary",
+    section: "Database",
+    icon: <SiPostgresql className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+  },
+  {
+    title: "Tailwind CSS",
+    color: "primary",
+    section: "Frontend",
+    icon: <SiTailwindcss className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "Bootstrap",
+    color: "primary",
+    section: "Frontend",
+    icon: <SiBootstrap className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "Docker",
+    color: "secondary",
+    section: "Testing",
+    icon: <SiDocker className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+  },
+  {
+    title: "Unity",
+    color: "secondary",
+    section: "Game Development",
+    icon: <SiUnity className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+  },
+  {
+    title: "Godot",
+    color: "primary",
+    section: "Game Development",
+    icon: <SiGodotengine className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "GitHub",
+    color: "primary",
+    section: "Tools",
+    icon: <SiGithub className="h-16 w-16 mx-2 my-2 fill-primary" />,
+  },
+  {
+    title: "AWS",
+    color: "secondary",
+    section: "Tools",
+    icon: <FaAws className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+  },
+];
+
+export const workExperience = [
+  {
+    company: "Equitable",
+    role: "Software Developer Co-op",
+    duration: "September 2024 - December 2024",
+    responsibilities: [
+      "Will be working on the development of a new web application using Angular, .NET, and C#.",
+      "Will be responsible for designing and implementing new features, as well as maintaining and updating existing code.",
+      "Will be working closely with the development team to ensure that the application meets the needs of the business and its users.",
+      "Will be participating in code reviews, testing, and debugging to ensure the quality and reliability of the application.",
+      "Will be working in an agile environment, using tools such as Jira, Git, and Visual Studio Code.",
+      "Will be collaborating with cross-functional teams to deliver high-quality software solutions.",
+    ],
+  },
+];
+
+export const education = [
+  {
+    company: "Conestoga College",
+    role: "IT Innovation & Design",
+    duration: "September 2022 - Present",
+    responsibilities: [
+      "Maintained 3.94 GPA throught the program",
+      "Coursework in software development, UX/UI design, and Mobile Development",
+      "Developed web and mobile applications using React, Angular, .NET, and C#.",
+      "Participated in team-based projects, focusing on agile methodologies and user-centered design.",
+      "Engaged in extracurricular activities such as the Indie Game Jam, where I led a team in creating a game using Godot and C#.",
+    ],
+  },
+];
+
+export const projects = [
+  {
+    title: "Nax Chat",
+    category: "FullStack",
+    categoryColor: "bg-orange-400",
+    description:
+      "A web app for real-time messaging, where users can create conversation with other users and send messages to each other. The app has features like user authentication, encrypted messages/passwords, and Image/Video support. The app is built using React, Express, NodeJs, MongoDB, Socket.io, Jsonwebtoken, clodinary, and Tailwind CSS.",
+    mobileImgs: [NM1, NM2, NM3],
+    tabletImg: NT1,
+    desktopImg: ND1,
+
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      "Express",
+      "NodeJs",
+      "MongoDB",
+      "Socket.io",
+      "Jsonwebtoken",
+    ],
+    isResponsive: true,
+    githubLink: "https://github.com/SahilThakar11/Nax-Chat",
+    liveLink: "https://nax-chat.onrender.com/",
+    buttonName: "Live Demo",
+    comingsoon: false,
+    githubAvailable: true,
+  },
+
+  {
+    title: "Savor Spot",
+    category: "Mobile",
+    mobileImgs: [SS1, SS2, SS3, SS4, SS5],
+    isResponsive: false,
+    isOnlyMobile: true,
+    categoryColor: "bg-red-400",
+    description:
+      "A mobile app made using Angular, Bootstrap, IndexedDb, and Cordova. Its a food ordering app where users can view the menu, add items to the cart, and place an order. The app uses IndexedDB to store the cart items locally on the device. Also save the user's order history.",
+    imageUrl: "https://placehold.co/600x400?text=Project+Templete",
+    techStack: ["Angular", "Cordova", "IndexedDB", "Bootstrap", "TypeScript"],
+    githubLink: "https://github.com/SahilThakar11/",
+    liveLink: "/SavorSpot.apk",
+    buttonName: "Install APK",
+    comingsoon: false,
+    githubAvailable: false,
+  },
+
+  {
+    title: "Galactic Conquest",
+    category: "Game",
+    categoryColor: "bg-green-400",
+    description:
+      "A 2D space shooter game where the player controls a spaceship and fights against enemy spaceships. The player can move the spaceship in all directions and shoot bullets to destroy enemy spaceships. The player can also collect power-ups to increase the firepower of the spaceship. The game has multiple levels with increasing difficulty.",
+    imageUrl:
+      "https://github.com/SahilThakar11/Galactic-Conquest-Space-Shooter-Game/blob/master/Imgs/g4.png?raw=true",
+    techStack: ["C#", ".Net Core", "Monogame"],
+    githubLink:
+      "https://github.com/SahilThakar11/Galactic-Conquest-Space-Shooter-Game",
+    liveLink: "/Galactic-Conquest.zip",
+    buttonName: "Install Game",
+    comingsoon: false,
+    githubAvailable: true,
+  },
+];
+
+const order = [
+  "Language",
+  "Frontend",
+  "Backend",
+  "Database",
+  "Tools",
+  "Design",
+  "Game Development",
+];
+
+export const sortedSkills = order.map((section) => {
+  const sectionSkills = skills.filter((skill) => skill.section === section);
+
+  const primarySkills = sectionSkills.filter(
+    (skill) => skill.color === "primary"
+  );
+  const secondarySkills = sectionSkills.filter(
+    (skill) => skill.color === "secondary"
+  );
+
+  const interleavedSkills = [];
+  const maxLength = Math.max(primarySkills.length, secondarySkills.length);
+
+  for (let i = 0; i < maxLength; i++) {
+    if (primarySkills[i]) {
+      interleavedSkills.push(primarySkills[i]);
+    }
+    if (secondarySkills[i]) {
+      interleavedSkills.push(secondarySkills[i]);
+    }
+  }
+
+  return {
+    section,
+    skills: interleavedSkills,
+  };
+});
