@@ -54,7 +54,7 @@ const ProjectCard = ({ project, reverse }) => {
           <div>
             {project.isOnlyMobile ? (
               <div
-                className={`flex gap-2 justify-center items-center overflow-auto pl-[16.5rem] md:pl-0`}
+                className={`flex gap-2 justify-center items-center overflow-auto`}
               >
                 {project.mobileImgs.map((img, index) => (
                   <img
