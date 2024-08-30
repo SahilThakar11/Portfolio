@@ -1,9 +1,9 @@
 <div align="center">
-<img src="src/assets/Portfolio.png" height="50px" style="" />
+<img src="src/assets/Portfolio.png" height="50px" />
 <h1 align="center" style="font-weight: bold;">Sahil's Portfolio </h1>
 </div>
-
-<a href="https://sahilthakar.tech"><h3 align="center">📱 Visit this Project</h3></a>
+<h3 align="center">
+<a href="https://sahilthakar.tech">📱 Visit this Project</a></h3
 
 ## 🌐 About This Site
 
@@ -53,6 +53,6 @@ To get started with the Portfolio project, follow these steps:
    npm run dev
    ```
 
-5. Open your browser and visit [http://localhost:5173](http://localhost:5173) to see the project in action.
+5. Open your browser and visit <a href="http://localhost:5173" target="_blank">http://localhost:5173</a> to see the project in action.
 
 Now you're ready to explore and customize the Portfolio project according to your needs!
