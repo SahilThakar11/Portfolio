@@ -37,7 +37,7 @@ const ProjectCard = ({ project, reverse }) => {
               <img
                 src={project.tabletImg}
                 alt={project.title}
-                className={` object-cover rounded-md shadow-lg ${
+                className={` object-cover rounded-md shadow-lg max-h-96 ${
                   selectedDevice === "Tablet" ? "flex" : "hidden"
                 }`}
               />{" "}
@@ -56,7 +56,7 @@ const ProjectCard = ({ project, reverse }) => {
               <div
                 className={`flex gap-2 justify-center items-center overflow-auto`}
               >
-                {project.mobileImgs.map((img, index) => (
+                {project?.mobileImgs.map((img, index) => (
                   <img
                     key={index}
                     src={img}

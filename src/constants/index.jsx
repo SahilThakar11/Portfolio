@@ -38,6 +38,12 @@ import SS3 from "../assets/SavorSpot/SS3.png";
 import SS4 from "../assets/SavorSpot/SS4.png";
 import SS5 from "../assets/SavorSpot/SS5.png";
 
+import PD1 from "../assets/Portfolio/PD1.png";
+import PT1 from "../assets/Portfolio/PT1.png";
+import PM1 from "../assets/Portfolio/PM1.png";
+import PM2 from "../assets/Portfolio/PM2.png";
+import PM3 from "../assets/Portfolio/PM3.png";
+
 const skills = [
   {
     title: "HTML",
@@ -229,7 +235,7 @@ export const projects = [
     category: "FullStack",
     categoryColor: "bg-orange-400",
     description:
-      "A web app for real-time messaging, where users can create conversation with other users and send messages to each other. The app has features like user authentication, encrypted messages/passwords, and Image/Video support. The app is built using React, Express, NodeJs, MongoDB, Socket.io, Jsonwebtoken, clodinary, and Tailwind CSS.",
+      "A web app for real-time messaging, where users can create conversation with other users and send messages to each other. The app has features like user authentication, encrypted messages/passwords, and Image/Video support. The app is built using React, Express, NodeJs, MongoDB, Socket.io, Jsonwebtoken, cloudinary, and Tailwind CSS.",
     mobileImgs: [NM1, NM2, NM3],
     tabletImg: NT1,
     desktopImg: ND1,
@@ -268,13 +274,30 @@ export const projects = [
     comingsoon: false,
     githubAvailable: false,
   },
-
+  {
+    title: "Portfolio Website",
+    category: "Frontend",
+    isResponsive: true,
+    desktopImg: PD1,
+    mobileImgs: [PM1, PM2, PM3],
+    tabletImg: PT1,
+    categoryColor: "bg-pink-400",
+    description:
+      "A personal portfolio website showcasing my skills, projects, and work experience. The website is built using React, Tailwind CSS, and React Icons. The website is responsive and works on all devices.",
+    techStack: ["React", "Tailwind CSS", "React Icons"],
+    liveLink: "/",
+    imageUrl: "https://placehold.co/600x400?text=Project+Templete",
+    githubLink: "https://github.com/SahilThakar11/Portfolio",
+    comingsoon: false,
+    githubAvailable: true,
+    buttonName: "Live Demo",
+  },
   {
     title: "Galactic Conquest",
     category: "Game",
     categoryColor: "bg-green-400",
     description:
-      "A 2D space shooter game where the player controls a spaceship and fights against enemy spaceships. The player can move the spaceship in all directions and shoot bullets to destroy enemy spaceships. The player can also collect power-ups to increase the firepower of the spaceship. The game has multiple levels with increasing difficulty.",
+      "A 2D space shooter game made using Monogame, .Net and C#. The game offers boos fights and endless survival mode. There are 4 different bosses available now. With the feautes of shop where player can buy new ships and weapons. The game has a leaderboard to track the high scores. The game is available for Windows. ",
     imageUrl:
       "https://github.com/SahilThakar11/Galactic-Conquest-Space-Shooter-Game/blob/master/Imgs/g4.png?raw=true",
     techStack: ["C#", ".Net Core", "Monogame"],
