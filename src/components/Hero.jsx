@@ -19,8 +19,8 @@ const Hero = () => {
         <p className="text-md w-[80%] md:text-lg text-gray-400 mb-8 md:w-[70%] lg:w-[60%] xl:w-[70%]">
           I am currently pursuing an advanced diploma in IT Innovation and
           Design at Conestoga College. I am seeking Co-op opportunities for
-          Winter 2025, Summer 2025, and Summer 2026. Presently, I am working as
-          a <span className="text-secondary font-bold">Software Developer</span>{" "}
+          Summer 2025, and Summer 2026. Presently, I am working as a{" "}
+          <span className="text-secondary font-bold">Software Developer</span>{" "}
           Co-op at{" "}
           <span className="text-primary cursor-pointer font-bold hover:underline transition-transform">
             <a

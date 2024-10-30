@@ -202,14 +202,13 @@ export const workExperience = [
   {
     company: "Equitable",
     role: "Software Developer Co-op",
-    duration: "September 2024 - December 2024",
+    duration: "September 2024 - April 2025",
     responsibilities: [
-      "Will be working on the development of a new web application using Angular, .NET, and C#.",
-      "Will be responsible for designing and implementing new features, as well as maintaining and updating existing code.",
-      "Will be working closely with the development team to ensure that the application meets the needs of the business and its users.",
-      "Will be participating in code reviews, testing, and debugging to ensure the quality and reliability of the application.",
-      "Will be working in an agile environment, using tools such as Jira, Git, and Visual Studio Code.",
-      "Will be collaborating with cross-functional teams to deliver high-quality software solutions.",
+      "Assisted in the development and maintenance of web applications using AngularJS, .NET/ASP.NET, and SQL Server, focusing on improving application performance and scalability.",
+      "Participated in Agile team activities, including sprint planning, daily stand-ups, and sprint reviews, helping the team stay organized and on track with project timelines",
+      "Gained hands-on experience with CI/CD pipelines in Azure DevOps, learning how to support efficient code deployment and reduce manual errors.",
+      "Worked alongside senior developers to address service requests and fix bugs, contributing to the overall reliability and functionality of internal applications..",
+      "Took part in code reviews and unit tests to improve code quality and learn best practices in software development.",
     ],
   },
 ];
