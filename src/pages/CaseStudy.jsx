@@ -1,8 +1,8 @@
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link, useParams } from "react-router-dom";
 import { caseStudies } from "../constants/index";
 import { ChevronLeft } from "lucide-react";
+import { useEffect } from "react";
 
 const CaseStudy = () => {
   return (
@@ -15,10 +15,15 @@ const CaseStudy = () => {
 };
 
 const CaseStudyContent = () => {
+  const id = useParams().id;
+
   const selectCaseStudyById = () => {
-    const id = useParams().id;
     return caseStudies.find((caseStudy) => caseStudy.id === id);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   const caseStudy = selectCaseStudyById();
 
