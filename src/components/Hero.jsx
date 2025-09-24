@@ -1,7 +1,8 @@
 import React from "react";
 import Button from "./design/Button";
-import { FaCode } from "react-icons/fa";
+import { FaCode, FaDownload } from "react-icons/fa";
 import "../components/styles/Hero.css";
+import { ArrowDownToLine } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -19,9 +20,7 @@ const Hero = () => {
         <p className="text-md w-[80%] md:text-lg text-gray-400 mb-8 md:w-[70%] lg:w-[60%] xl:w-[70%]">
           I am currently pursuing an advanced diploma in IT Innovation and
           Design at Conestoga College. I am seeking Co-op opportunities for
-          Summer 2025, and Summer 2026. Presently, I am working as a{" "}
-          <span className="text-secondary font-bold">Software Developer</span>{" "}
-          Co-op at{" "}
+          Summer 2026. I have completed 12 month Co-op at{" "}
           <span className="text-primary cursor-pointer font-bold hover:underline transition-transform">
             <a
               target="_blank"
@@ -30,14 +29,16 @@ const Hero = () => {
             >
               Equitable
             </a>
-          </span>
-          .
+          </span>{" "}
+          as{" "}
+          <span className="text-secondary font-bold">Software Developer</span> .
         </p>
         <Button
           text="Get My Resume"
           className="w-[80%] md:w-[19rem]"
           link="/Resume.pdf"
           download="Resume_Sahil_Thakar.pdf"
+          Icon={ArrowDownToLine}
         />
       </div>
 

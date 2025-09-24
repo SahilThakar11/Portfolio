@@ -1,4 +1,3 @@
-import { FaAws } from "react-icons/fa";
 import {
   SiHtml5,
   SiJavascript,
@@ -24,6 +23,7 @@ import {
   SiGodotengine,
   SiAdobephotoshop,
   SiGithub,
+  SiKotlin,
 } from "react-icons/si";
 
 import NM1 from "../assets/NaxChat/NM1.png";
@@ -44,157 +44,146 @@ import PM1 from "../assets/Portfolio/PM1.png";
 import PM2 from "../assets/Portfolio/PM2.png";
 import PM3 from "../assets/Portfolio/PM3.png";
 
+import RP1 from "../assets/RecipeApp/RP3.png";
+import RP2 from "../assets/RecipeApp/RP1.png";
+import RP3 from "../assets/RecipeApp/RP2.png";
+import RP4 from "../assets/RecipeApp/RP4.png";
+import RP5 from "../assets/RecipeApp/RP6.png";
+import RP6 from "../assets/RecipeApp/RP5.png";
+import RP7 from "../assets/RecipeApp/RP7.png";
+import RPP1 from "../assets/RecipeApp/ux/p1.png";
+import RPP2 from "../assets/RecipeApp/ux/p2.png";
+import RPS1 from "../assets/RecipeApp/ux/s1.png";
+import RPS2 from "../assets/RecipeApp/ux/s2.png";
+import RPW from "../assets/RecipeApp/ux/wireframes.png";
+import RPPF from "../assets/RecipeApp/ux/final-pro.png";
+
 const skills = [
   {
     title: "HTML",
     section: "Frontend",
-    color: "primary",
     icon: <SiHtml5 className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "CSS",
-    color: "primary",
     section: "Frontend",
     icon: <SiCss3 className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "JavaScript",
-    color: "primary",
     section: "Language",
     icon: <SiJavascript className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "C#",
-    color: "primary",
     section: "Language",
     icon: <SiCsharp className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: ".NET",
-    color: "primary",
     section: "Backend",
     icon: <SiDotnet className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "React",
-    color: "secondary",
     section: "Frontend",
-    icon: <SiReact className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+    icon: <SiReact className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "Angular",
-    color: "secondary",
     section: "Frontend",
-    icon: <SiAngular className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+    icon: <SiAngular className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "Node.js",
-    color: "primary",
     section: "Backend",
     icon: <SiNodedotjs className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "Express",
-    color: "primary",
     section: "Backend",
     icon: <SiExpress className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "MongoDB",
-    color: "primary",
     section: "Database",
     icon: <SiMongodb className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "MySQL",
-    color: "primary",
     section: "Database",
     icon: <SiMysql className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "Git",
-    color: "primary",
     section: "Tools",
     icon: <SiGit className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "VS Code",
-    color: "primary",
     section: "Tools",
     icon: <SiVisualstudiocode className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "MS Azure",
-    color: "secondary",
     section: "Tools",
-    icon: <SiMicrosoftazure className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+    icon: <SiMicrosoftazure className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "Figma",
-    color: "secondary",
     section: "Design",
-    icon: <SiFigma className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+    icon: <SiFigma className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "Photoshop",
-    color: "secondary",
     section: "Design",
-    icon: <SiAdobephotoshop className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+    icon: <SiAdobephotoshop className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
 
   {
     title: "TypeScript",
-    color: "primary",
     section: "Language",
     icon: <SiTypescript className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "PostgreSQL",
-    color: "secondary",
     section: "Database",
-    icon: <SiPostgresql className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+    icon: <SiPostgresql className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "Tailwind CSS",
-    color: "primary",
     section: "Frontend",
     icon: <SiTailwindcss className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "Bootstrap",
-    color: "primary",
     section: "Frontend",
     icon: <SiBootstrap className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "Docker",
-    color: "secondary",
     section: "Testing",
-    icon: <SiDocker className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+    icon: <SiDocker className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "Unity",
-    color: "secondary",
     section: "Game Development",
-    icon: <SiUnity className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+    icon: <SiUnity className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "Godot",
-    color: "primary",
     section: "Game Development",
     icon: <SiGodotengine className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
     title: "GitHub",
-    color: "primary",
     section: "Tools",
     icon: <SiGithub className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
   {
-    title: "AWS",
-    color: "secondary",
-    section: "Tools",
-    icon: <FaAws className="h-16 w-16 mx-2 my-2 fill-secondary" />,
+    title: "Kotlin",
+    section: "Language",
+    icon: <SiKotlin className="h-16 w-16 mx-2 my-2 fill-primary" />,
   },
 ];
 
@@ -229,6 +218,21 @@ export const education = [
 ];
 
 export const projects = [
+  {
+    title: "Let's Cook and Share",
+    category: "UI/UX",
+    categoryColor: "bg-blue-400",
+    description:
+      "A recipe sharing web app where users can share their recipes with others. The app has features like user authentication, recipe creation, and recipe sharing. The app is built using Figma and Adobe Photoshop.",
+    mobileImgs: [RP1, RP2, RP3, RP4],
+    isOnlyMobile: true,
+
+    techStack: ["Figma"],
+    comingsoon: false,
+    githubAvailable: false,
+    isCaseStudy: true,
+    caseStudyLink: "/case-study/lets-cook-and-share",
+  },
   {
     title: "Nax Chat",
     category: "FullStack",
@@ -285,7 +289,6 @@ export const projects = [
       "A personal portfolio website showcasing my skills, projects, and work experience. The website is built using React, Tailwind CSS, and React Icons. The website is responsive and works on all devices.",
     techStack: ["React", "Tailwind CSS", "React Icons"],
     liveLink: "/",
-    imageUrl: "https://placehold.co/600x400?text=Project+Templete",
     githubLink: "https://github.com/SahilThakar11/Portfolio",
     comingsoon: false,
     githubAvailable: true,
@@ -309,6 +312,33 @@ export const projects = [
   },
 ];
 
+export const caseStudies = [
+  {
+    id: "lets-cook-and-share",
+    title: "Let's Cook and Share",
+    projectOverview:
+      "This project focused on designing a recipe and cooking application that simplifies meal preparation and enhances the overall cooking experience. The goal was to create a user-friendly platform that allows people to easily search for recipes, manage their ingredients, and share their culinary creations. From initial sketches to high-fidelity prototypes, the project followed a structured design process to ensure the solution was both functional and enjoyable to use.",
+    problemStatement:
+      "Cooking at home often becomes overwhelming due to difficulties in finding recipes, keeping track of ingredients, and managing time efficiently. Many existing recipe apps lack intuitive navigation, clutter-free layouts, or features that connect recipes directly to users’ pantry items. The challenge was to design a solution that reduced decision fatigue, improved accessibility, and empowered users to cook with confidence while avoiding food waste.",
+    userInterview:
+      "User research involved interviews with different types of home cooks, from busy students to family-oriented individuals. Insights revealed key frustrations such as complicated interfaces, difficulty finding recipes that matched available ingredients, and lack of reminders for expiring groceries. These findings shaped the personas and guided the design toward features that prioritize convenience, personalization, and clarity.",
+    marketAnalysis:
+      "An analysis of popular cooking apps showed that while many offer large recipe databases, they often fail to integrate smart ingredient management or user-friendly interfaces. Competitors also tend to overload users with options, leading to decision fatigue. This gap in the market provided an opportunity to build a platform that balances simplicity with functionality, standing out by connecting recipe discovery with real-time inventory tracking.",
+    solutions:
+      "Create a clean, intuitive interface that makes navigation seamless. Provide smart search and categorization to reduce cognitive load. Incorporate notifications for expiring groceries to reduce waste. Enable personalization through user profiles and saved recipes. Solutions included a search-driven homepage, detailed recipe pages with step-by-step instructions, and a notification system tied to ingredient management.",
+    userTesting:
+      "Prototypes were tested with potential users to validate usability and design choices. Feedback confirmed that the search feature was clear and effective, while the notification system was appreciated for its practicality. Iterations focused on improving visual hierarchy, reducing clutter, and ensuring accessibility through scalable fonts and contrasting colors.",
+    finalSolution:
+      "The final design is a recipe and cooking platform that integrates recipe discovery, ingredient tracking, and personalized user features. By applying principles from cognitive psychology—such as Hick’s Law, Miller’s Law, and Gestalt principles—the app reduces decision fatigue, organizes information logically, and ensures smooth navigation. The solution delivers a seamless cooking experience, catering to both novice and experienced users.",
+    theDesignBrief:
+      "The design brief called for a digital solution that enhances the home cooking experience by reducing stress, saving time, and cutting down on food waste. The application needed to be visually appealing, easy to use, and adaptable for a wide range of users. The final product reflects these requirements by blending functional features with a clean design system, ensuring accessibility and engagement throughout the user journey.",
+    sketchesImgs: [RPS1, RPS2],
+    wireframeImgs: [RPW],
+    prototypeImgs: [RPPF],
+    personaImgs: [RPP1, RPP2],
+  },
+];
+
 const order = [
   "Language",
   "Frontend",
@@ -322,27 +352,5 @@ const order = [
 export const sortedSkills = order.map((section) => {
   const sectionSkills = skills.filter((skill) => skill.section === section);
 
-  const primarySkills = sectionSkills.filter(
-    (skill) => skill.color === "primary"
-  );
-  const secondarySkills = sectionSkills.filter(
-    (skill) => skill.color === "secondary"
-  );
-
-  const interleavedSkills = [];
-  const maxLength = Math.max(primarySkills.length, secondarySkills.length);
-
-  for (let i = 0; i < maxLength; i++) {
-    if (primarySkills[i]) {
-      interleavedSkills.push(primarySkills[i]);
-    }
-    if (secondarySkills[i]) {
-      interleavedSkills.push(secondarySkills[i]);
-    }
-  }
-
-  return {
-    section,
-    skills: interleavedSkills,
-  };
+  return { section, skills: sectionSkills };
 });

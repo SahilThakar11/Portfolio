@@ -1,6 +1,6 @@
-import React from "react";
 import Button from "./design/Button";
 import Footer from "./Footer";
+import { SendHorizonal } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -11,7 +11,7 @@ const Contact = () => {
       >
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-semibold text-secondary mb-8">
-            <span className="text-primary">05.</span> Contact Me
+            <span className="text-primary">05.</span> Connect With Me
           </h2>{" "}
           <p className="text-md text-center text-gray-400 mb-8 w-[70%] md:w-[50%] lg:text-lg lg:w-[30%] xl:w-[40%] mx-auto">
             I'm currently looking for new opportunities, my inbox is always
@@ -22,6 +22,7 @@ const Contact = () => {
             text="Email Me"
             link="mailto:thakars311@gmail.com"
             className="w-64"
+            Icon={SendHorizonal}
           />
         </div>
       </section>

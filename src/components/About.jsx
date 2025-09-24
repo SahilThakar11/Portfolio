@@ -35,7 +35,7 @@ const About = () => {
               <li>C#</li>
               <li>React</li>
               <li>Angular</li>
-              <li>ASP.NET</li>
+              <li>.NET Core</li>
               <li>Node.js</li>
             </ul>
             <a

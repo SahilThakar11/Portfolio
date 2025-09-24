@@ -5,6 +5,8 @@ import GitHubButton from "./design/GithubButton";
 import DemoButton from "./design/DemoButton";
 import { FaLaptop, FaTabletAlt } from "react-icons/fa";
 import { FaMobileScreen } from "react-icons/fa6";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const categories = [
   "All",
@@ -121,7 +123,7 @@ const ProjectCard = ({ project, reverse }) => {
         <div className="bg-primary/10 p-4 rounded-md shadow-lg mt-4">
           <p className="text-gray-300 text-sm">{project.description}</p>
         </div>
-        <ul className="flex flex-wrap text-sm text-gray-400 mt-4 gap-2">
+        <ul className={`flex flex-wrap text-sm text-gray-400 mt-4 gap-2`}>
           {project.techStack.map((tech, index) => (
             <li key={index} className="">
               <Chip text={tech} />
@@ -139,14 +141,24 @@ const ProjectCard = ({ project, reverse }) => {
                 <GitHubButton />
               </a>
             )}
-            <a
-              href={project.liveLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 md:mt-0 md:ml-4"
-            >
-              <DemoButton text={project.buttonName} />
-            </a>
+            {project.liveLink && (
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 md:mt-0 md:ml-4"
+              >
+                <DemoButton text={project.buttonName} />
+              </a>
+            )}
+            {project.isCaseStudy && (
+              <Link
+                to={project.caseStudyLink}
+                className="mt-4 md:mt-0 md:ml-4 text-secondary underline font-bold cursor-pointer flex flex-row gap-0.5 items-center hover:text-secondary/80 transition"
+              >
+                View Case Study <ArrowRight width={18} height={18} />
+              </Link>
+            )}
           </div>
         ) : (
           <div className="flex flex-col md:flex-row mt-4">

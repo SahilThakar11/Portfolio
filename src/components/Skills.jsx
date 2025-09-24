@@ -13,17 +13,6 @@ const Skills = () => {
           <span className="text-primary">03.</span> Technologies I've Worked
           With
         </h2>
-        <div className="flex flex-row justify-center gap-4">
-          <div className="flex flex-row gap-3 items-center">
-            <div className=" bg-primary w-4 h-4 rounded-full"></div>
-            <span className="text-primary">Proficient</span>
-          </div>
-
-          <div className="flex flex-row gap-3 items-center">
-            <div className="flex justify-center bg-secondary w-4 h-4 rounded-full"></div>
-            <span className="text-secondary">Intermediate</span>
-          </div>
-        </div>
         <div className="flex flex-wrap xl:w-[60%] xl:mx-auto gap-3 justify-center items-center mt-5">
           {sortedSkills.map((item, index) =>
             item.skills.map((skill, index) => (
@@ -31,7 +20,7 @@ const Skills = () => {
                 key={index}
                 title={skill.title}
                 section={skill.section}
-                color={skill.color}
+                color={"primary"}
                 icon={skill.icon}
               />
             ))
