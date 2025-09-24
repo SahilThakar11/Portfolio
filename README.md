@@ -3,7 +3,7 @@
 <h1 align="center" style="font-weight: bold;">Sahil's Portfolio </h1>
 </div>
 <h3 align="center">
-<a href="https://sahilthakar.tech">📱 Visit this Project</a></h3
+<a href="https://sahilthakar.me">📱 Visit this Project</a></h3
 
 ## 🌐 About This Site
 
