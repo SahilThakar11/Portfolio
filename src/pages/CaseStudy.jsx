@@ -69,7 +69,7 @@ const CaseStudyContent = () => {
           <CaseStudyImageSection
             title="User Personas"
             images={caseStudy.personaImgs}
-            xl={500}
+            xl={300}
           />
           <Divider />
           <CaseStudyImageSection
@@ -147,7 +147,7 @@ const CaseStudyImageSection = ({ title, images, xl }) => {
             src={img}
             alt={title}
             className={`h-[180px] ${
-              xl ? `xl:h-[${xl}px]` : "xl:h-[350px]"
+              xl ? `xl:h-[500px]` : "xl:h-[350px]"
             } object-cover rounded-md shadow-lg mt-5`}
           />
         ))}
