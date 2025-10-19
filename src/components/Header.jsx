@@ -118,11 +118,18 @@ const Header = () => {
             <span className="text-primary">04.</span> Projects
           </a>
           <a
+            href="#certificates"
+            className="text-[#ccd6f6] flex flex-col text-center hover:text-secondary font-mono text-lg"
+            onClick={toggleMenu}
+          >
+            <span className="text-primary">05.</span> Certificates
+          </a>
+          <a
             href="#contact"
             className="text-[#ccd6f6] flex flex-col text-center hover:text-secondary font-mono text-lg"
             onClick={toggleMenu}
           >
-            <span className="text-primary">05.</span> Contact
+            <span className="text-primary">06.</span> Contact
           </a>
         </nav>
       </aside>

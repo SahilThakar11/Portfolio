@@ -22,16 +22,18 @@ const ProjectCard = ({ project, reverse }) => {
         reverse ? "lg:flex-row-reverse" : "lg:flex-row"
       } mb-12 lg:mb-16`}
     >
-      <div className="lg:w-1/2 flex-shrink-0">
+      <div className="lg:w-1/2 flex-shrink-0 px-4 md:px-0">
         {project.isResponsive ? (
           <div>
-            <div className={`flex gap-2 justify-center items-center`}>
+            <div
+              className={`flex gap-2 justify-center items-center overflow-x-auto`}
+            >
               {project.mobileImgs.map((img, index) => (
                 <img
                   key={index}
                   src={img}
                   alt={project.title}
-                  className={`w-28 md:w-44 object-cover rounded-md shadow-lg ${
+                  className={`w-24 sm:w-28 md:w-44 object-contain rounded-md shadow-lg flex-shrink-0 ${
                     selectedDevice === "Mobile" ? "" : "hidden"
                   }`}
                 />
@@ -39,14 +41,14 @@ const ProjectCard = ({ project, reverse }) => {
               <img
                 src={project.tabletImg}
                 alt={project.title}
-                className={` object-cover rounded-md shadow-lg max-h-96 ${
+                className={`w-full object-contain rounded-md shadow-lg max-h-96 ${
                   selectedDevice === "Tablet" ? "flex" : "hidden"
                 }`}
               />{" "}
               <img
                 src={project.desktopImg}
                 alt={project.title}
-                className={` object-cover rounded-md shadow-lg ${
+                className={`w-full object-contain rounded-md shadow-lg ${
                   selectedDevice === "Desktop" ? "flex" : "hidden"
                 }`}
               />
@@ -56,14 +58,14 @@ const ProjectCard = ({ project, reverse }) => {
           <div>
             {project.isOnlyMobile ? (
               <div
-                className={`flex gap-2 justify-center items-center overflow-auto`}
+                className={`flex gap-2 justify-start items-center overflow-x-auto pb-2`}
               >
                 {project?.mobileImgs.map((img, index) => (
                   <img
                     key={index}
                     src={img}
                     alt={project.title}
-                    className={`w-32 md:w-32 object-cover rounded-md shadow-lg flex flex-row`}
+                    className={`w-28 sm:w-32 md:w-32 object-contain rounded-md shadow-lg flex-shrink-0`}
                   />
                 ))}
               </div>
@@ -71,7 +73,7 @@ const ProjectCard = ({ project, reverse }) => {
               <img
                 src={project.imageUrl}
                 alt={project.title}
-                className="w-full h-auto object-cover rounded-md shadow-lg"
+                className="w-full h-auto object-contain rounded-md shadow-lg"
               />
             )}
           </div>
@@ -193,11 +195,11 @@ const ProjectSection = () => {
         <h2 className="text-3xl font-semibold text-secondary mb-8">
           <span className="text-primary">04.</span> Some Things I{"'"}ve Built
         </h2>
-        <div className="flex flex-row w-full border-t-2 scroll-thin overflow-auto justify-center h-auto border-gray-700 text-gray-400 mb-8 ">
+        <div className="flex flex-row w-full border-t-2 overflow-x-auto justify-start md:justify-center h-auto border-gray-700 text-gray-400 mb-8">
           {categories.map((category, index) => (
             <button
               key={index}
-              className={`px-4 py-2 ${
+              className={`px-4 py-2 whitespace-nowrap flex-shrink-0 ${
                 selectedCategory === category
                   ? "text-secondary font-semibold border-t-4  border-primary bg-primary/10 h-min"
                   : ""
