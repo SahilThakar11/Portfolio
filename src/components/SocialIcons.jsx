@@ -9,6 +9,7 @@ const SocialIcons = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="mb-4 text-slate-500 hover:text-slate-50 transition duration-300"
+        aria-label="GitHub Repository"
       >
         <FaGithub size={24} />
       </a>
@@ -17,6 +18,7 @@ const SocialIcons = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="mb-4 text-slate-500 hover:text-slate-50 transition duration-300"
+        aria-label="LinkedIn Profile"
       >
         <FaLinkedin size={24} />
       </a>
@@ -25,6 +27,7 @@ const SocialIcons = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="mb-4 text-slate-500 hover:text-slate-50 transition duration-300"
+        aria-label="Instagram Profile"
       >
         <FaInstagram size={24} />
       </a>

@@ -13,6 +13,7 @@ const Button = ({
       href={link}
       download={download}
       rel="noopener noreferrer"
+      aria-label={text}
       className={`hover:text-black font-bold relative inline-flex items-center justify-center px-6 py-3 overflow-hidden cursor-pointer  text-${color}  border-${color} rounded-lg shadow-md group ${className}`}
     >
       <span

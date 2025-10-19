@@ -221,7 +221,7 @@ export const projects = [
   {
     title: "Let's Cook and Share",
     category: "UI/UX",
-    categoryColor: "bg-blue-400",
+    categoryColor: "bg-blue-600",
     description:
       "A recipe sharing web app where users can share their recipes with others. The app has features like user authentication, recipe creation, and recipe sharing. The app is built using Figma and Adobe Photoshop.",
     mobileImgs: [RP1, RP2, RP3, RP4],
@@ -236,7 +236,7 @@ export const projects = [
   {
     title: "Nax Chat",
     category: "FullStack",
-    categoryColor: "bg-orange-400",
+    categoryColor: "bg-violet-600",
     description:
       "A web app for real-time messaging, where users can create conversation with other users and send messages to each other. The app has features like user authentication, encrypted messages/passwords, and Image/Video support. The app is built using React, Express, NodeJs, MongoDB, Socket.io, Jsonwebtoken, cloudinary, and Tailwind CSS.",
     mobileImgs: [NM1, NM2, NM3],
@@ -266,7 +266,7 @@ export const projects = [
     mobileImgs: [SS1, SS2, SS3, SS4, SS5],
     isResponsive: false,
     isOnlyMobile: true,
-    categoryColor: "bg-red-400",
+    categoryColor: "bg-red-600",
     description:
       "A mobile app made using Angular, Bootstrap, IndexedDb, and Cordova. Its a food ordering app where users can view the menu, add items to the cart, and place an order. The app uses IndexedDB to store the cart items locally on the device. Also save the user's order history.",
     imageUrl: "https://placehold.co/600x400?text=Project+Templete",
@@ -284,7 +284,7 @@ export const projects = [
     desktopImg: PD1,
     mobileImgs: [PM1, PM2, PM3],
     tabletImg: PT1,
-    categoryColor: "bg-pink-400",
+    categoryColor: "bg-pink-600",
     description:
       "A personal portfolio website showcasing my skills, projects, and work experience. The website is built using React, Tailwind CSS, and React Icons. The website is responsive and works on all devices.",
     techStack: ["React", "Tailwind CSS", "React Icons"],
@@ -297,7 +297,7 @@ export const projects = [
   {
     title: "Galactic Conquest",
     category: "Game",
-    categoryColor: "bg-green-400",
+    categoryColor: "bg-fuchsia-600",
     description:
       "A 2D space shooter game made using Monogame, .Net and C#. The game offers boos fights and endless survival mode. There are 4 different bosses available now. With the feautes of shop where player can buy new ships and weapons. The game has a leaderboard to track the high scores. The game is available for Windows. ",
     imageUrl:

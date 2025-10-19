@@ -19,7 +19,7 @@ const Header = () => {
       <header className="fixed w-full top-0 bg-opacity-90 backdrop-filter backdrop-blur-lg bg-[#0a192f] py-4 shadow-md md:shadow-2xl z-[100]">
         <div className="container mx-auto flex justify-between items-center px-4">
           <div className="text-[#64FFDA] font-mono text-xl">
-            <a href="/#hero">
+            <a href="/#hero" aria-label="Hero Section">
               <img src={logo} alt="Logo" className="w-10" />
             </a>
           </div>
@@ -28,36 +28,42 @@ const Header = () => {
             <a
               href="#about"
               className="text-[#ccd6f6] hover:text-secondary font-mono text-sm"
+              aria-label="About Section"
             >
               <span className="text-primary">01.</span> About
             </a>
             <a
               href="#work"
               className="text-[#ccd6f6] hover:text-secondary font-mono text-sm"
+              aria-label="Work Section"
             >
               <span className="text-primary">02.</span> Work
             </a>
             <a
               href="#skills"
               className="text-[#ccd6f6] hover:text-secondary font-mono text-sm"
+              aria-label="Skills Section"
             >
               <span className="text-primary">03.</span> Skills
             </a>
             <a
               href="#projects"
               className="text-[#ccd6f6] hover:text-secondary font-mono text-sm"
+              aria-label="Projects Section"
             >
               <span className="text-primary">04.</span> Projects
             </a>
             <a
               href="#certificates"
               className="text-[#ccd6f6] hover:text-secondary font-mono text-sm"
+              aria-label="Certificates Section"
             >
               <span className="text-primary">05.</span> Certificates
             </a>
             <a
               href="#contact"
               className="text-[#ccd6f6] hover:text-secondary font-mono text-sm"
+              aria-label="Contact Section"
             >
               <span className="text-primary">06.</span> Contact
             </a>
@@ -92,6 +98,7 @@ const Header = () => {
           <a
             href="#about"
             className="flex flex-col text-center text-[#ccd6f6] hover:text-secondary font-mono text-lg"
+            aria-label="About Section"
             onClick={toggleMenu}
           >
             <span className="text-primary ">01.</span> About
@@ -99,6 +106,7 @@ const Header = () => {
           <a
             href="#work"
             className="text-[#ccd6f6] flex flex-col text-center hover:text-secondary font-mono text-lg"
+            aria-label="Work Section"
             onClick={toggleMenu}
           >
             <span className="text-primary">02.</span> Work
@@ -106,6 +114,7 @@ const Header = () => {
           <a
             href="#skills"
             className="text-[#ccd6f6] flex flex-col text-center hover:text-secondary font-mono text-lg"
+            aria-label="Skills Section"
             onClick={toggleMenu}
           >
             <span className="text-primary">03.</span> Skills
@@ -113,6 +122,7 @@ const Header = () => {
           <a
             href="#projects"
             className="text-[#ccd6f6] flex flex-col text-center hover:text-secondary font-mono text-lg"
+            aria-label="Projects Section"
             onClick={toggleMenu}
           >
             <span className="text-primary">04.</span> Projects
@@ -120,6 +130,7 @@ const Header = () => {
           <a
             href="#certificates"
             className="text-[#ccd6f6] flex flex-col text-center hover:text-secondary font-mono text-lg"
+            aria-label="Certificates Section"
             onClick={toggleMenu}
           >
             <span className="text-primary">05.</span> Certificates
@@ -127,6 +138,7 @@ const Header = () => {
           <a
             href="#contact"
             className="text-[#ccd6f6] flex flex-col text-center hover:text-secondary font-mono text-lg"
+            aria-label="Contact Section"
             onClick={toggleMenu}
           >
             <span className="text-primary">06.</span> Contact

@@ -14,7 +14,7 @@ const About = () => {
         </h2>
         <div className="flex flex-col justify-center md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
           <div className="md:w-1/2">
-            <p className="text-md text-gray-400 leading-relaxed">
+            <p className="text-md text-gray-200 leading-relaxed">
               Hello! My Name is Sahil Thakar. My journey into technology began
               with a passion for problem-solving and a fascination with how
               things work behind the scenes. Over the years, I've gained
@@ -22,7 +22,7 @@ const About = () => {
               about the path I{"’"}m on.
             </p>
             <br />
-            <p className="text-md text-gray-400">
+            <p className="text-md text-gray-200">
               I’m always excited to learn and explore new technologies and look
               forward to what the future holds in the field of technology.
             </p>

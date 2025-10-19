@@ -17,7 +17,7 @@ const Hero = () => {
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
           Aspiring Software Developer
         </h2>
-        <p className="text-md w-[80%] md:text-lg text-gray-400 mb-8 md:w-[70%] lg:w-[60%] xl:w-[70%]">
+        <p className="text-md w-[80%] md:text-lg text-gray-200 mb-8 md:w-[70%] lg:w-[60%] xl:w-[70%]">
           I am currently pursuing an advanced diploma in IT Innovation and
           Design at Conestoga College. I am seeking Co-op opportunities for
           Summer 2026. I have completed 12 month Co-op at{" "}
@@ -26,6 +26,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.linkedin.com/company/equitabletogether/"
+              aria-label="Equitable Insurance Company Website"
             >
               Equitable
             </a>

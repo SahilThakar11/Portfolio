@@ -140,15 +140,15 @@ const CaseStudyImageSection = ({ title, images, xl }) => {
       >
         <h2 className="text-xl font-semibold text-secondary">{title}</h2>
       </div>
-      <div className="flex flex-wrap flex-row gap-4 mb-4 justify-center items-start w-full">
+      <div className="flex flex-wrap flex-row gap-4 mb-4 justify-center items-start w-full overflow-x-auto pb-2">
         {images.map((img, index) => (
           <img
             key={index}
             src={img}
             alt={title}
-            className={`h-[180px] ${
+            className={`h-[180px] sm:h-[220px] md:h-[280px] ${
               xl ? `xl:h-[500px]` : "xl:h-[350px]"
-            } object-cover rounded-md shadow-lg mt-5`}
+            } w-auto object-contain rounded-md shadow-lg mt-5 flex-shrink-0`}
           />
         ))}
       </div>

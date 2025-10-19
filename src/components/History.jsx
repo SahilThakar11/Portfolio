@@ -15,7 +15,7 @@ const History = () => {
           <span className="text-primary">02.</span> Work Experience
         </h2>
         <div className="flex flex-col md:flex-row">
-          <div className="flex md:flex-col md:w-1/3 border-l-2 h-min border-gray-700 text-gray-400 mb-8 md:mb-0">
+          <div className="flex md:flex-col md:w-1/3 border-l-2 h-min border-gray-700 text-gray-200 mb-8 md:mb-0">
             {workExperience.map((job, index) => (
               <button
                 key={index}
@@ -37,10 +37,10 @@ const History = () => {
                 @ {workExperience[selectedCompany].company}
               </span>
             </h3>
-            <p className="text-sm text-gray-400 mt-1 mb-4">
+            <p className="text-sm text-gray-200 mt-1 mb-4">
               {workExperience[selectedCompany].duration}
             </p>
-            <ul className="list-disc list-inside space-y-2 text-sm text-gray-400">
+            <ul className="list-disc list-inside space-y-2 text-sm text-gray-200">
               {workExperience[selectedCompany].responsibilities.map(
                 (item, index) => (
                   <li key={index} className="leading-relaxed">
@@ -57,7 +57,7 @@ const History = () => {
           <span className="text-primary"></span> Education
         </h2>
         <div className="flex flex-col md:flex-row">
-          <div className="flex md:flex-col md:w-1/3 border-l-2 h-min border-gray-700 text-gray-400 mb-8 md:mb-0">
+          <div className="flex md:flex-col md:w-1/3 border-l-2 h-min border-gray-700 text-gray-200 mb-8 md:mb-0">
             {education.map((place, index) => (
               <button
                 key={index}
@@ -79,10 +79,10 @@ const History = () => {
                 @ {education[selectedEducation].company}
               </span>
             </h3>
-            <p className="text-sm text-gray-400 mt-1 mb-4">
+            <p className="text-sm text-gray-200 mt-1 mb-4">
               {education[selectedEducation].duration}
             </p>
-            <ul className="list-disc list-inside space-y-2 text-sm text-gray-400">
+            <ul className="list-disc list-inside space-y-2 text-sm text-gray-200">
               {education[selectedEducation].responsibilities.map(
                 (item, index) => (
                   <li key={index} className="leading-relaxed">

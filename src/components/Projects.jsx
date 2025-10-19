@@ -125,7 +125,7 @@ const ProjectCard = ({ project, reverse }) => {
         <div className="bg-primary/10 p-4 rounded-md shadow-lg mt-4">
           <p className="text-gray-300 text-sm">{project.description}</p>
         </div>
-        <ul className={`flex flex-wrap text-sm text-gray-400 mt-4 gap-2`}>
+        <ul className={`flex flex-wrap text-sm text-gray-200 mt-4 gap-2`}>
           {project.techStack.map((tech, index) => (
             <li key={index} className="">
               <Chip text={tech} />
@@ -139,6 +139,7 @@ const ProjectCard = ({ project, reverse }) => {
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub Repository"
               >
                 <GitHubButton />
               </a>
@@ -149,6 +150,7 @@ const ProjectCard = ({ project, reverse }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 md:mt-0 md:ml-4"
+                aria-label="Live Demo"
               >
                 <DemoButton text={project.buttonName} />
               </a>
@@ -169,6 +171,7 @@ const ProjectCard = ({ project, reverse }) => {
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub Repository"
               >
                 <GitHubButton />
               </a>
@@ -195,7 +198,7 @@ const ProjectSection = () => {
         <h2 className="text-3xl font-semibold text-secondary mb-8">
           <span className="text-primary">04.</span> Some Things I{"'"}ve Built
         </h2>
-        <div className="flex flex-row w-full border-t-2 overflow-x-auto justify-start md:justify-center h-auto border-gray-700 text-gray-400 mb-8">
+        <div className="flex flex-row w-full border-t-2 overflow-x-auto justify-start md:justify-center h-auto border-gray-700 text-gray-200 mb-8">
           {categories.map((category, index) => (
             <button
               key={index}

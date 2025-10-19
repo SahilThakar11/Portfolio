@@ -7,7 +7,7 @@ const PageLost = () => {
       <h2 className="text-4xl text-secondary font-semibold ml-2">
         Page Not Found
       </h2>
-      <p className="text-gray-400 mt-4">
+      <p className="text-gray-200 mt-4">
         The page you are looking for does not exist.
       </p>
 

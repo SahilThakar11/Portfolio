@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="py-8 text-center text-gray-400 bg-background">
+    <footer className="py-8 text-center text-gray-200 bg-background">
       <div className="container mx-auto px-6">
         <div className="h-px w-full bg-slate-500 mb-4"></div>
 
@@ -14,6 +14,7 @@ const Footer = () => {
             href="https://github.com/SahilThakar11"
             target="_blank"
             rel="noreferrer"
+            aria-label="GitHub Profile"
           >
             <FiGithub className="text-2xl mx-2" />
           </a>
@@ -21,6 +22,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/sahil-thakar/"
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn Profile"
           >
             <FaLinkedinIn className="text-2xl mx-2" />
           </a>
@@ -28,6 +30,7 @@ const Footer = () => {
             href="https://www.instagram.com/sahil_3113/"
             target="_blank"
             rel="noreferrer"
+            aria-label="Instagram Profile"
           >
             <FaInstagram className="text-2xl mx-2" />
           </a>

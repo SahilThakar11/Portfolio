@@ -13,7 +13,7 @@ const Contact = () => {
           <h2 className="text-3xl font-semibold text-secondary mb-8">
             <span className="text-primary">05.</span> Connect With Me
           </h2>{" "}
-          <p className="text-md text-center text-gray-400 mb-8 w-[70%] md:w-[50%] lg:text-lg lg:w-[30%] xl:w-[40%] mx-auto">
+          <p className="text-md text-center text-gray-200 mb-8 w-[70%] md:w-[50%] lg:text-lg lg:w-[30%] xl:w-[40%] mx-auto">
             I'm currently looking for new opportunities, my inbox is always
             open. Whether you have a question or just want to say hi, I'll try
             my best to get back to you!
