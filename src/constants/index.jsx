@@ -191,7 +191,7 @@ export const workExperience = [
   {
     company: "Equitable",
     role: "Software Developer Co-op",
-    duration: "September 2024 - April 2025",
+    duration: "September 2024 - August 2025",
     responsibilities: [
       "Assisted in the development and maintenance of web applications using AngularJS, .NET/ASP.NET, and SQL Server, focusing on improving application performance and scalability.",
       "Participated in Agile team activities, including sprint planning, daily stand-ups, and sprint reviews, helping the team stay organized and on track with project timelines",
